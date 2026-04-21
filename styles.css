@@ -1,0 +1,108 @@
+body {
+	margin: 0;
+}
+#wrapper {
+	
+}
+#youtube-layout {
+	display: grid;
+	grid-template-columns: 700px auto;
+	grid-template-rows: 33%;
+	width: auto;
+	column-gap: 20px;
+	justify-self: center;
+	padding: 10px;
+}
+.shorts {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+nav {
+	overflow: hidden;
+	background-color: #000;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	border: none;
+	z-index: 1;
+}
+nav a {
+	float: left;
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 1.2em;
+	font-family: "Microsoft Sans Serif", sans-serif;
+}
+nav a:last-child {
+	float: right;
+	background-color: #228B22;
+}
+nav a:hover {
+	color: #ff0000;
+}
+.selected {
+	background-color: #ccc;
+	color: #000;
+	pointer-events: none;
+	cursor: default;
+}
+main {
+	margin-top: 3em;
+}
+
+h1, h2, h3, p {
+	font-family: "Roboto", sans-serif;
+	padding: 0;
+	margin: 0;
+
+}
+h2 a {
+	color: #000;
+	text-decoration: none;
+	font-size: 24px;
+}
+iframe {
+	width: 700px;
+	height: 400px;
+}
+.description {
+	background-color: #a5a4a4;
+	border: 1px solid black;
+	border-radius: 10px;
+	padding: 10px;
+}
+.sub-button .button {
+	height: 50px;
+	background-color: #228B22;
+	border: 1px solid #000;
+	border-radius: 25px;
+	font-size: 17px;
+}
+.sub-button a {
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #fff;
+	font-weight: bold;
+	padding: 10px 20px;
+}
+
+footer {
+	background-color: #000;
+	color: #fff;
+	padding: 1em 0 1em 1em;
+	font-size: 0.9em;
+	font-style: italic;
+	text-align: center;
+}
+footer a {
+	color: #FFF;
+}
+
+@media (max-width: 1130px) { 
+	#youtube-layout {
+	display: block;
+}
+}

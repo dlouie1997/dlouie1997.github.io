@@ -201,6 +201,11 @@ dt {
 .adobeimagescomparewide {
 	width: 500px;
 }
+.video-style iframe {
+	width: 100%;
+	height: 100%;
+	min-height: 1100px;
+}
 iframe {
 	width: 480px;
 	height: 270px;
